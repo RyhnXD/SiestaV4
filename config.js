@@ -144,7 +144,8 @@ global.hbeach = ['https://telegra.ph/file/14ae0ba2da77d74e6b80c.jpg', 'https://t
 /*============== TEXT ==============*/
 global.wait = '_*Loading*_ ...'
 global.eror = '```404 error```'
-global.fkontak = '6289524208209'
+global.fkontak = '6289524208209@Whatsapp.net'
+
 /*=========== TYPE DOCUMENT ===========*/
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
