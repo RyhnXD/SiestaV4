@@ -1,0 +1,39 @@
+let handler = async (m, { conn }) => {
+let ph = 'lumayan'
+let pn = 'Wowww'
+let pp = 'buruk'
+let pv = 'sangat buruk'
+let ppm = 'Bagus'
+let info = `
+*${htki} RATE BINTANG ${htka}*
+`
+const sections = [
+   {
+    title: `RATING`,
+	rows: [
+	    {title: "⭐⭐⭐⭐⭐", rowId: '.nilainih *Paket:* 5⭐ Rate', description: 'Bagus Sekali' },
+	    {title: "⭐⭐⭐⭐", rowId: '.nilainih *Paket:* 4⭐ Rate', description: 'Bagus' },
+	{title: "⭐⭐⭐", rowId: '.nilainih *Paket:* 3⭐ Rate', description: 'Lumayan' },
+	{title: "⭐⭐", rowId: '.nilainih *Paket:* 2⭐ Rate', description: 'Buruk' },
+	{title: "⭐", rowId: '.nilainih *Paket:* 1⭐ Rate', description: 'Buruk Sekali' },
+	]
+    },
+]
+
+const listMessage = {
+  text: info,
+  footer: botdate,
+  title: wm,
+  buttonText: "Click Here!",
+  sections
+}
+await conn.sendMessage(m.chat, listMessage)
+}
+
+handler.help = ['rating', 'ratebot']
+handler.tags = ['info']
+handler.command = /^(rate(bot)?|rating)$/i
+handler.limit = true
+handler.private = false
+
+export default handler
