@@ -178,7 +178,7 @@ global.cmenuh = '』––––––' //header
 global.cmenub = '┊☃︎ ' //body
 global.cmenuf = '┗━═┅═━––––––๑\n' //footer
 global.cmenua = '' //after
-global.pmenus = '☃︎' //pembatas menu selector
+global.pmenus = '☘︎' //pembatas menu selector
 
 global.htki = '––––––『' //hiasan title kiri
 global.htka = '』––––––' //hiasan title kanan
@@ -188,7 +188,7 @@ global.htjava = '☘︎' //hiasan Doang :v
 
 /*============== STICKER WM ==============*/
 global.stickpack = 'ᴅɪ ʙᴜᴀᴛ ᴏʟᴇʜ'
-global.stickauth = `☘︎ ᴍɪᴋᴏᴛᴏ ʙᴏᴛᴢ`
+global.stickauth = `☘︎ ᴍɪᴋᴏᴛᴏ ʙᴏᴛᴢ [081779211748] nomor botz`
 
 global.multiplier = 38 // The higher, The harder levelup
 
