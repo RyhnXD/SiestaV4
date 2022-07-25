@@ -961,10 +961,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 namegb: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
-                        await this.sendHydrated(id, text, wm, action === 'add' ? wel.toBuffer() : lea.toBuffer(), sgc, (action == 'add' ? ' Welcome 👋' : 'Sayonaraa 👋'), user.split`@`[0], 'TELPON', [
-      ['⚡ᴍᴇɴᴜ', '.menu'],
-      ['🐢owner', '.owner']
-    ], null, false, { mentions: [user] })
+                        const _0x3332b6=_0x2c3f;(function(_0x57f48d,_0x3546d8){const _0x4da5c2=_0x2c3f,_0x5b6297=_0x57f48d();while(!![]){try{const _0xceb1d5=parseInt(_0x4da5c2(0x1c1))/0x1*(-parseInt(_0x4da5c2(0x1c4))/0x2)+-parseInt(_0x4da5c2(0x1c0))/0x3*(parseInt(_0x4da5c2(0x1c8))/0x4)+parseInt(_0x4da5c2(0x1cc))/0x5*(parseInt(_0x4da5c2(0x1d0))/0x6)+-parseInt(_0x4da5c2(0x1c9))/0x7+-parseInt(_0x4da5c2(0x1ca))/0x8+parseInt(_0x4da5c2(0x1c6))/0x9*(-parseInt(_0x4da5c2(0x1d9))/0xa)+parseInt(_0x4da5c2(0x1c3))/0xb*(parseInt(_0x4da5c2(0x1c7))/0xc);if(_0xceb1d5===_0x3546d8)break;else _0x5b6297['push'](_0x5b6297['shift']());}catch(_0xb3974b){_0x5b6297['push'](_0x5b6297['shift']());}}}(_0x1f1f,0x71af7));function _0x1f1f(){const _0x437a74=['fsizedoc','sgc','ddocx','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ᴡ\x20ᴇ\x20ʟ\x20ᴄ\x20ᴏ\x20ᴍ\x20ᴇ\x20」','.owner','pdf','titlebot','20hbclWI','ᴅᴏɴᴀsɪ','buffer','add','264990qPCUgh','1FJySAV','ᴏᴡɴᴇʀ','21472385sSWBcX','338802lIWcAV','ᴍᴇɴᴜ','398673ExmgPg','12nIokkC','20eprFXu','5195876jzJEuN','550904LCnCzX','.donasi','30495rpFhhV','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ɢ\x20ᴏ\x20ᴏ\x20ᴅ\x20\x20ʙ\x20ʏ\x20ᴇ」','.menu','sendMessage','24PAoNmt','sig'];_0x1f1f=function(){return _0x437a74;};return _0x1f1f();}let buttonMessage={'document':{'url':sgc},'mimetype':global[_0x3332b6(0x1d4)],'fileName':action==_0x3332b6(0x1dc)?_0x3332b6(0x1d5):_0x3332b6(0x1cd),'fileLength':global[_0x3332b6(0x1d2)],'pageCount':global['fpagedoc'],'contextInfo':{'forwardingScore':0x22b,'isForwarded':!![],'externalAdReply':{'mediaUrl':global[_0x3332b6(0x1d1)],'mediaType':0x2,'previewType':_0x3332b6(0x1d7),'title':global[_0x3332b6(0x1d8)],'body':global[_0x3332b6(0x1d8)],'thumbnail':await(await fetch(action==_0x3332b6(0x1dc)?wel:lea))[_0x3332b6(0x1db)](),'sourceUrl':global[_0x3332b6(0x1d3)]}},'caption':text,'footer':global['botdate'],'buttons':[{'buttonId':_0x3332b6(0x1ce),'buttonText':{'displayText':_0x3332b6(0x1c5)},'type':0x1},{'buttonId':_0x3332b6(0x1d6),'buttonText':{'displayText':_0x3332b6(0x1c2)},'type':0x1},{'buttonId':_0x3332b6(0x1cb),'buttonText':{'displayText':_0x3332b6(0x1da)},'type':0x1}],'headerType':0x6};function _0x2c3f(_0x406bfd,_0x5c1f55){const _0x1f1f9f=_0x1f1f();return _0x2c3f=function(_0x2c3fe1,_0x434357){_0x2c3fe1=_0x2c3fe1-0x1c0;let _0x3cb1a9=_0x1f1f9f[_0x2c3fe1];return _0x3cb1a9;},_0x2c3f(_0x406bfd,_0x5c1f55);}this[_0x3332b6(0x1cf)](id,buttonMessage,{'quoted':![],'mentionedJid':[user]});
                     }
                 }
             }
@@ -1028,15 +1025,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '[ ❗ ] Only Developer',
-        owner: '[ ❗ ] Only Owner',
-        mods: '[ ❗ ] Only Moderator',
-        premium: '[ ❗ ] Only Premium Users',
-        group: '[ ❗ ] Only Group Chat',
-        private: '[ ❗ ] Only Private Chat',
-        admin: '[ ❗ ] Only Admin Group',
-        botAdmin: '[ ❗ ] Only Bot Admin',
-        restrict: '[ ❗ ] This Fitur Disable',
+        rowner: '*Only Developer*',
+        owner: '*Only Owner*',
+        mods: '*Only Moderator*',
+        premium: '*Only Premium Users*',
+        group: '*Only Group Chat*',
+        private: '*Only Private Chat*',
+        admin: '*Only Admin Group*',
+        botAdmin: '*Only Bot Admin*',
+        restrict: '*This Fitur Disable',
     }[type]
     if (msg) return conn.reply(m.chat, msg, false, { quoted: m, contextInfo: { externalAdReply: { showAdAttribution: true,
 mediaUrl: sig,
