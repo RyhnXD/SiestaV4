@@ -16,8 +16,8 @@ user.limitjoin += 1
     if (expired) chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24
 }
 handler.help = ['join <chat.whatsapp.com>']
-handler.tags = ['owner']
-handler.owner = true
+handler.tags = ['premium']
+handler.owner = false
 handler.private = true
 
 handler.command = /^join$/i
